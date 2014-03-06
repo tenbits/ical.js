@@ -181,7 +181,7 @@
       if(self.objectHandlers[name])
         return self.objectHandlers[name](val, params, ctx, stack, line)
 
-      return ctx
+      return storeParam(name)(val, params, ctx);
     },
 
 
